@@ -23,3 +23,16 @@ var checkPlindrome = function(leftIndex, rightIndex){
   
    return checkPlindrome(startIndex, lastIndex);
 }
+
+
+
+function isPalindromeS2(x){
+  let reverseNum = 0;
+  let tmp = x;
+  while(tmp > 0){
+    reverseNum = reverseNum*10 + tmp%10;
+    tmp = Math.floor(tmp/10);
+   }
+   console.log(reverseNum)
+  return x == reverseNum;
+}
