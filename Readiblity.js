@@ -1,6 +1,7 @@
 function readability(str){
   let letter_count = 0,sentence_count = 0, word_count=1;
   for(let i=0, count = str.length; i < count;i++){
+    // A-Z OR a-z
     if((str[i].charCodeAt(0) >= 65 && str[i].charCodeAt(0) <= 90) || (str[i].charCodeAt(0) >= 97 && str[i].charCodeAt(0) <= 122)){
       letter_count ++;
     }else if(str[i] == '!' || str[i] == '?' || str[i] == '.'){
